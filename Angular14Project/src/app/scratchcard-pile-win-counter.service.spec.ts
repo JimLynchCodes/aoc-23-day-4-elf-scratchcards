@@ -29,12 +29,13 @@ describe('ScratchcardPileWinCounterService', () => {
     it('calculates the worth of scratchcards', () => {
 
       expect(service.evaluatesScratchcardPile(simpleInput)).toEqual(13)
+      // expect(service.solution(simpleInput.split('\n'))).toEqual(13)
 
     })
 
     it('calculates the worth of scratchcards (complicated one)', () => {
 
-      expect(service.evaluatesScratchcardPile(complexInput)).toEqual(13)
+      expect(service.evaluatesScratchcardPile(complexInput)).toEqual(22488)
 
     })
 
